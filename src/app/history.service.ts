@@ -9,7 +9,7 @@ export class HistoryService {
   history: Product[] = [];
 
   add(product: Product) {
-    this.history.push(product);
+    console.log('Product added to history'+ JSON.stringify(product));
   }
 
   clear() {

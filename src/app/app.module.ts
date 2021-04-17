@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HistoryService } from './history.service';
 import { HistoryComponent } from './history/history.component';
 import { ProductsComponent } from './products/products.component';
+import {DemoMaterialModule} from './material.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductsComponent } from './products/products.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    DemoMaterialModule
   ],
   providers: [
     // no need to place any providers due to the `providedIn` flag...
