@@ -1,0 +1,7 @@
+<h2>History</h2>
+<ul class="products">
+  <li *ngFor='let item of historyService.history; index as i;'>
+    <span class="badge">{{i+1}}</span> {{item.name}}
+  </li>
+</ul>
+<button class="clear" *ngIf="historyService.history.length" (click)="historyService.clear()">Clear history</button>
