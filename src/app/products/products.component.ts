@@ -18,7 +18,6 @@ export class ProductsComponent implements OnInit {
   constructor(private productService: ProductService, private historyService: HistoryService) { }
 
   ngOnInit() {
-    this.getProducts();
   }
 
   onSelect(product: Product): void {

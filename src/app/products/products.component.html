@@ -1,4 +1,5 @@
-<h2>Search Result</h2>
+<input type="text">
+<button (click)="getProducts()">Search</button>
 <ul class="products">
   <li *ngFor="let product of products"
     [class.selected]="product === selectedProduct"
