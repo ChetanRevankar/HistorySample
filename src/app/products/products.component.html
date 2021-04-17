@@ -1,9 +1,9 @@
-<input type="text">
-<button (click)="getProducts()">Search</button>
+<div>
+  <input type="text" style="width:100px;">
+  <button (click)="getProducts()">Search</button>
+</div>
 <ul class="products">
-  <li *ngFor="let product of products"
-    [class.selected]="product === selectedProduct"
-    (click)="onSelect(product)">
+  <li *ngFor="let product of products" [class.selected]="product === selectedProduct" (click)="onSelect(product)">
     <span class="badge">{{product.id}}</span> {{product.name}}
   </li>
 </ul>
